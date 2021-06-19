@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box:
+  }
+  body {
+    margin: 0px;
+  }
+  .grid-container {
+    border: 2px dotted black;
+    min-height: 100vh;
+    display: grid;
+    grid-template:
+      "header header header header" 50px
+      "left-sidebar center-main second-sidebar third-sidebar" 1fr /
+      150px 1fr 150px 50px;
+      gap: 5px;
+  }
+  .head {
+    grid-area: header;
+    background-color: rgb(206, 206, 142);
+    border: 2px dotted black;
+  }
+  .left-side {
+    grid-area: left-sidebar;
+    background-color: lightcoral;
+    border: 2px dotted black;
+  }
+  .center-main {
+    grid-area: center-main;
+    background-color: lightgreen;
+    border: 2px dotted black;
+  }
+  .second-side {
+    grid-area: second-sidebar;
+    background-color: lightpink;
+    border: 2px dotted black;
+  }
+  .third-side {
+    grid-area: third-sidebar;
+    background-color: lightblue;
+    border: 2px dotted black;
+  }
+  

@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+  }
+  
+  .grid-container {
+    width: 100vw;
+    height: 100vh;
+  
+    display: grid;
+    grid-template:
+      "header header header" 50px
+      "left-menu main right-menu" 1fr /
+      200px 1fr 200px;
+    gap: 5px;
+  }
+  
+  .header {
+    grid-area: header;
+    background-color: #488b9770;
+    border: 1px dotted black;
+  }
+  
+  .left-menu {
+    grid-area: left-menu;
+    background-color: #cecb3370;
+    border: 1px dotted black;
+  }
+  
+  .main {
+    grid-area: main;
+    background-color: #2e478b70;
+    border: 1px dotted black;
+  }
+  
+  .right-menu {
+    grid-area: right-menu;
+    background-color: #752e4c70;
+    border: 1px dotted black;
+  }
+  
